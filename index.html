@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Twitter data -->
     <meta name="twitter:card" content="summary">
@@ -151,6 +153,9 @@
         padding-bottom:50%;
         max-width:75%;
       }
+      #map{
+        height: 50vh;
+      }
     </style>
   </head>
   <body>
@@ -218,6 +223,123 @@
       </div><!-- closes .container -->
 
 
+      <div id='map'></div>
+
+
+
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiYWJhbmVyamVlIiwiYSI6ImNqdDR2ZnRpZzJwM2o0NG9zdnQ0NGJhMWMifQ.IZCg_yQvYgo8BzKnwpdNCg';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center: [43.377576, 36.270785],
+            zoom: 10
+          });
+
+          map.on('load', function() {
+
+              map.addSource('churches', {
+                type: 'geojson',
+                data: './assets/churches.geojson'
+              });
+
+              map.addLayer({
+              id: 'churches-heat',
+              type: 'heatmap',
+              source: 'churches',
+              maxzoom: 15,
+              paint: {
+                // increase weight as diameter breast height increases
+                'heatmap-weight': {
+                  property: 'dbh',
+                  type: 'exponential',
+                  stops: [
+                    [1, 0],
+                    [62, 1]
+                  ]
+                },
+                // increase intensity as zoom level increases
+                'heatmap-intensity': {
+                  stops: [
+                    [11, 1],
+                    [15, 3]
+                  ]
+                },
+                // assign color values be applied to points depending on their density
+                'heatmap-color': [
+                  'interpolate',
+                  ['linear'],
+                  ['heatmap-density'],
+                  0, 'rgba(236,222,239,0)',
+                  0.2, 'rgb(208,209,230)',
+                  0.4, 'rgb(166,189,219)',
+                  0.6, 'rgb(103,169,207)',
+                  0.8, 'rgb(28,144,153)'
+                ],
+                // increase radius as zoom increases
+                'heatmap-radius': {
+                  stops: [
+                    [11, 15],
+                    [15, 20]
+                  ]
+                },
+                // decrease opacity to transition into the circle layer
+                'heatmap-opacity': {
+                  default: 1,
+                  stops: [
+                    [14, 1],
+                    [15, 0]
+                  ]
+                },
+              }
+            }, 'waterway-label');
+
+                map.addLayer({
+                  id: 'churches-point',
+                  type: 'circle',
+                  source: 'churches',
+                  minzoom: 14,
+                  paint: {
+                    // increase the radius of the circle as the zoom level and dbh value increases
+                    'circle-radius': {
+                      property: 'dbh',
+                      type: 'exponential',
+                      stops: [
+                        [{ zoom: 15, value: 1 }, 5],
+                        [{ zoom: 15, value: 62 }, 10],
+                        [{ zoom: 22, value: 1 }, 20],
+                        [{ zoom: 22, value: 62 }, 50],
+                      ]
+                    },
+                    'circle-color': {
+                      property: 'dbh',
+                      type: 'exponential',
+                      stops: [
+                        [0, 'rgba(236,222,239,0)'],
+                        [10, 'rgb(236,222,239)'],
+                        [20, 'rgb(208,209,230)'],
+                        [30, 'rgb(166,189,219)'],
+                        [40, 'rgb(103,169,207)'],
+                        [50, 'rgb(28,144,153)'],
+                        [60, 'rgb(1,108,89)']
+                      ]
+                    },
+                    'circle-stroke-color': 'white',
+                    'circle-stroke-width': 1,
+                    'circle-opacity': {
+                      stops: [
+                        [14, 0],
+                        [15, 1]
+                      ]
+                    }
+                  }
+                }, 'waterway-label');
+
+        });
+
+         
+
+        </script>
 
     </div><!-- close #skrollr-body -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>

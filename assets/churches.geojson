@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.1599394,
+                    36.3410231,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "hfjhgkjhgk",
+                "styleUrl": "#icon-1899-0288D1",
+                "styleHash": "1b6fcdd2",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-normal",
+                    "highlight": "#icon-1899-0288D1-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
+                "description": "<img src=\"https://lh5.googleusercontent.com/Bx8iN84THtwg2-nA84lCnmf89K9Udji9fyveE8gr_LbZgspjibfwwgo-JyGzvo1_4qjnlKH2nJYxBOpIN6jymiYgLbL_4MZ4uSOllbSum0d9LfWki2VMzebgjkrh_Kt6whxBzg\" height=\"200\" width=\"auto\" /><br><br>vnhfhmvmnvmn",
+                "gx_media_links": "https://lh5.googleusercontent.com/Bx8iN84THtwg2-nA84lCnmf89K9Udji9fyveE8gr_LbZgspjibfwwgo-JyGzvo1_4qjnlKH2nJYxBOpIN6jymiYgLbL_4MZ4uSOllbSum0d9LfWki2VMzebgjkrh_Kt6whxBzg"
+            }
+        }
+    ]
+}
