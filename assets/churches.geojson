@@ -6,22 +6,209 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    43.1599394,
-                    36.3410231,
+                    43.377576,
+                    36.270785,
                     0
                 ]
             },
             "properties": {
-                "name": "hfjhgkjhgk",
-                "styleUrl": "#icon-1899-0288D1",
-                "styleHash": "1b6fcdd2",
+                "name": "Al Tahira Church",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
                 "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-normal",
-                    "highlight": "#icon-1899-0288D1-highlight"
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
                 },
-                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png",
-                "description": "<img src=\"https://lh5.googleusercontent.com/Bx8iN84THtwg2-nA84lCnmf89K9Udji9fyveE8gr_LbZgspjibfwwgo-JyGzvo1_4qjnlKH2nJYxBOpIN6jymiYgLbL_4MZ4uSOllbSum0d9LfWki2VMzebgjkrh_Kt6whxBzg\" height=\"200\" width=\"auto\" /><br><br>vnhfhmvmnvmn",
-                "gx_media_links": "https://lh5.googleusercontent.com/Bx8iN84THtwg2-nA84lCnmf89K9Udji9fyveE8gr_LbZgspjibfwwgo-JyGzvo1_4qjnlKH2nJYxBOpIN6jymiYgLbL_4MZ4uSOllbSum0d9LfWki2VMzebgjkrh_Kt6whxBzg"
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.375236,
+                    36.266147,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mart Shmouni",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3785800000001,
+                    36.266293,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mar Georges",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.375528,
+                    36.267611,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mar Sarkis and Backus Church ",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3808329999999,
+                    36.269722,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mar Yohanna/ St John ",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.379234,
+                    36.271036,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "St. Jacobs",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3748820000001,
+                    36.268774,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "St Zena ",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3757499999999,
+                    36.277139,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Mar Sarah and Behnam ",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.3740379999999,
+                    36.292771,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Maqartaya Church and Tell ",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    43.372108,
+                    36.300415,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Church of Resurrection",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "-258dc051",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
             }
         }
     ]

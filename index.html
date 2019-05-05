@@ -178,20 +178,14 @@
           <div class="col-12 col-sm-10 col-md-8 col-lg-6">
 
             <h2>Lorem ipsum dolor sit amet</h2>
+              
+            <p>When Father Abona Ammar, an Assyrian Catholic priest, left his hometown of Qaraqosh, Iraq five years ago he took nothing with him. He was told the Daesh were invading. “My thought was maybe we leave for few hours, maybe one day, maybe two days. Not more,” Ammar said.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est :) laborum.</p>
+            <p>“We couldn’t imagine that it would be for three years,” he said.</p>
+              
+            <p>In those three years, churches in Qaraqosh, Iraq’s largest Christian town, were destroyed and looted by the Daesh. They leveled a 700 year old monastery and turned a 6th century church into a weapons factory. The largest church, Al Tahira (The Great Immaculate Church), was burned from the inside out and is still unusable to this day.</p>
+              
+            <p>“You know when someone loses everything, how can you feel? You lose your city, your home, your church,” said Ammar. “It was a great, great pain.” </p>
               
         </div>
       </div>
@@ -233,7 +227,7 @@
             container: 'map',
             style: 'mapbox://styles/mapbox/dark-v10',
             center: [43.377576, 36.270785],
-            zoom: 10
+            zoom: 12
           });
 
           map.on('load', function() {
@@ -337,7 +331,12 @@
 
         });
 
-         
+                 map.on('click', 'churches-point', function(e) {
+          new mapboxgl.Popup()
+            .setLngLat(e.features[0].geometry.coordinates)
+            .setHTML('<b>DBH:</b> ' + e.features[0].properties.dbh)
+            .addTo(map);
+        });
 
         </script>
 
