@@ -25,10 +25,10 @@
     <meta property="og:description" content="" />
 
 
-    <title>News Package</title>
+    <title>Three Years</title>
     <style>
         
-        
+        }
          html,body {
             height: 100%;
         }
@@ -219,7 +219,6 @@
                 <p>Using open source investigative techniques and satellite imagery, we confirmed the locations of Christian churches damaged or destroyed by the Daesh in Qaraqosh.</p>
           </div>
             <div class="sect sectTwo"></div>
-            <div class="sect sectThree"></div>
             <div class="sect sectFive"></div>
             <div class="sect sectSeven"></div>
             <div class="sect subSection">
@@ -238,7 +237,8 @@
       <div id='map'></div>
 
 
-
+<!-- MAPBOX -->
+        
         <script>
           mapboxgl.accessToken = 'pk.eyJ1IjoiYWJhbmVyamVlIiwiYSI6ImNqdDR2ZnRpZzJwM2o0NG9zdnQ0NGJhMWMifQ.IZCg_yQvYgo8BzKnwpdNCg';
           var map = new mapboxgl.Map({
@@ -355,9 +355,11 @@
             .setHTML('<b>DBH:</b> ' + e.features[0].properties.dbh)
             .addTo(map);
         });
+        
+
 
         </script>
-
+    
     </div><!-- close #skrollr-body -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
