@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
 
@@ -111,7 +111,7 @@
       }
 
       header{
-        background-image: url(https://media.journalism.berkeley.edu/upload/2019/05/1557096520f749c7a.jpeg);
+        background-image: url(https://media.journalism.berkeley.edu/upload/2019/05/15571225630ced650.jpg);
         height: 100vh;
         color: whitesmoke; 
         text-align: center;
@@ -132,7 +132,7 @@
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 0.2em;
-        font-family: sans-serif;
+        font-family: 'Rubik', sans-serif;
 
       }
 
@@ -182,11 +182,25 @@
 
             <h2>When Father Abona Ammar,</h2>
               
-            <p>an Assyrian Catholic priest, left his hometown of Qaraqosh, Iraq five years ago he took nothing with him. He was told the Daesh were invading. “My thought was maybe we leave for few hours, maybe one day, maybe two days. Not more,” Ammar said.</p>
+            <p>an Assyrian Catholic priest, left his hometown of Qaraqosh, Iraq five years ago he took nothing with him. He was told the 
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" trigger="hover" data-content="More commonly known to westerners as ''ISIS.'' We are using the term Daesh, which is an arabic acronym that roughly translates to ''bigot.'' Using Daesh delegitimizes the statehood implied by using the term, the Islamic State">
+                Daesh
+                </button> 
+            were invading. “My thought was maybe we leave for few hours, maybe one day, maybe two days. Not more,” Ammar said.</p>
 
             <p>“We couldn’t imagine that it would be for three years,” he said.</p>
+            
+                <img src="https://media.journalism.berkeley.edu/upload/2019/05/15571207344876aa1.jpg" alt="Father Ammar standing in the center of burned out Al Tahira church" align="right" height="500vh" width="350vw"> 
               
-            <p>In those three years, churches in Qaraqosh, Iraq’s largest Christian town, were destroyed and looted by the Daesh. They leveled a 700 year old monastery and turned a 6th century church into a weapons factory. The largest church, Al Tahira (The Great Immaculate Church), was burned from the inside out and is still unusable to this day.</p>
+            <p>In those three years, churches in Qaraqosh, Iraq’s largest Christian town, were destroyed and looted by the Daesh. They leveled a 700 year old 
+               <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" trigger="hover" data-content="More commonly known to westerners as ''ISIS.'' We are using the term Daesh, which is an arabic acronym that roughly translates to ''bigot.'' Using Daesh delegitimizes the statehood implied by using the term, the Islamic State"> 
+                monastery 
+                </button>      
+            and turned a 6th century church into a weapons 
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" trigger="hover" data-content="img src"="https://media.journalism.berkeley.edu/upload/2019/05/15571201909d9fcfe.jpg">
+                factory. 
+                </button> 
+            The largest church, Al Tahira (The Great Immaculate Church), was burned from the inside out and is still unusable to this day.</p>
               
             <p>“You know when someone loses everything, how can you feel? You lose your city, your home, your church,” said Ammar. “How can you feel?” </p>
               
@@ -365,6 +379,15 @@
         var s = skrollr.init();
 
       });
+    </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//bootstrap.bundle.min.js"></script>
+    <script>
+    $( document ).ready(function()
+    $('#example').popover(options){
+    bootstrap.bundle.min.js / bootstrap.bundle.js
+    });
+    
     </script>
   </body>
 </html>
